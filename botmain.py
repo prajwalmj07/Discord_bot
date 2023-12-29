@@ -1,3 +1,4 @@
 import discord11
 
-discord11.runbot()
+if __name__ == '__main__':
+    discord11.runbot()
