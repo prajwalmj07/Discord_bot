@@ -1,8 +1,8 @@
 import discord
 
 
-from chat import get_response
-from train import ATrain
+from discordcht import get_response
+from train_model import ATrain
 
 ATrain()
 
