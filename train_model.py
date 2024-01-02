@@ -10,6 +10,7 @@ from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
 def ATrain():
+
     with open('intents.json', 'r') as f:
         intents = json.load(f)
 
@@ -56,10 +57,10 @@ def ATrain():
 
     # Hyper-parameters
     num_epochs = 1000
-    batch_size = 8
+    batch_size = 10
     learning_rate = 0.001
     input_size = len(X_train[0])
-    hidden_size = 8
+    hidden_size = 10
     output_size = len(tags)
     print(input_size, output_size)
 
@@ -115,6 +116,8 @@ def ATrain():
 
     print(f'final loss: {loss.item():.4f}')
 
+
+
     data = {
     "model_state": model.state_dict(),
     "input_size": input_size,
@@ -128,3 +131,8 @@ def ATrain():
     torch.save(data, FILE)
 
     print(f'training complete. file saved to {FILE}')
+
+
+ATrain()
+
+
