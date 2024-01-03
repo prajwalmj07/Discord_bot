@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='hv', intents=intents)
 
 #remove the default help command so that we can write out own
 bot.remove_command('help')
-TOKEN  = 'MTE3MzY2Mjg0MTI5MTY3MzY2Mg.Gx6S4Q.mAW_qXTvV0ZWWU76fFs33h4Bn_V9rnPGixjyZk'
+TOKEN  = ''
 async def main():
     async with bot:
         await bot.add_cog(help_cog(bot))
