@@ -35,7 +35,7 @@
          "context_set": ""
         },
         {"tag": "us",
-         "patterns": ["US mai kaha kaha gaye aap", "can i get a loan", ""],
+         "patterns": ["US mai kaha kaha gaye aap", "", ""],
          "responses": ["US mai bahut jaga gaya hu"],
          "context_set": ""
         },
